@@ -8,13 +8,13 @@ Create a Wi-Fi hotspot using a Raspberry Pi that's already connected to your Tai
 
 ## Table of Contents
 
-1. [Why This Project?](#why-this-project)  
-2. [Features](#features)  
-3. [How It Works](#how-it-works)  
-4. [Requirements](#requirements)  
-5. [Setup](#setup)  
-6. [Contributing](#contributing)  
-7. [License](#license)
+1. [Why This Project?](#-why-this-project)  
+2. [Features](#-features)  
+3. [How It Works](#-how-it-works)  
+4. [Requirements](#-requirements)  
+5. [Setup](#-setup)  
+6. [Contributing](#-contributing)  
+7. [License](#-license)
 
 ---
 
