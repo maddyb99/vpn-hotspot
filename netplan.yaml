@@ -1,0 +1,17 @@
+# network: {config: disabled}
+network:
+  version: 2
+  ethernets:
+    renderer: NetworkManager
+    eth0:
+      dhcp4: true
+      optional: true
+  wifis:
+    renderer: NetworkManager
+    wlan0:
+      access-points:
+        Hotspot:                    # change the SSID if required 
+          password: password@123    # change the password if required
+          mode: ap
+      dhcp4: true
+      optional: true
