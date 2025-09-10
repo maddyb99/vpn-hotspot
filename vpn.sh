@@ -14,3 +14,5 @@ firewall-cmd --permanent --add-masquerade
 tailscale up --auth-key=$1
 #for some reason, running the below command directly breaks averything
 tailscale up --auth-key=$1 --exit-node=$2 --accept-routes=true --accept-dns=true --exit-node-allow-lan-access=true 
+
+systemctl restart NetworkManager
