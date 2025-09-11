@@ -29,9 +29,9 @@ This project is for anyone who wants to provide VPN access to devices that can't
 *   **Works with Tailscale**, and the concepts are extensible to other VPNs.
 *   **Built on Raspberry Pi** and optimized for a lean Ubuntu Server environment.
 
-## 🗺️ How It Works
+## 🧩 How It Works
 
-The Raspberry Pi acts as a gateway, forwarding all traffic from the Wi-Fi interface (`wlan0`) to the VPN interface (`tailscale0`). This is accomplished using `netplan` for network configuration and IP forwarding to route packets between the two networks.
+The Raspberry Pi acts as a gateway, forwarding all traffic from the Wi-Fi interface to the VPN. This is accomplished using `netplan` for network configuration and IP forwarding to route packets between the two networks.
 
 ```mermaid
 graph TD
@@ -48,7 +48,6 @@ graph TD
         Server[Server]
         Device_C[Device C]
     end
-
     Server[Server] --> Tailscale_Network
     RPi --> Tailscale_Network
 ```
@@ -77,7 +76,7 @@ graph TD
 5. Run the setup scripts in sequence:
    ```bash
    sudo ./hotspot.sh
-   sudo ./vpn.sh
+   sudo ./vpn.sh <your_tailscale_key> <your_exit_node_ip>
    ```
   * hotspot.sh: Sets up Wi-Fi AP mode, configures NetworkManager and ipv4 sharing.
   * vpn.sh: Ensures VPN connectivity and applies firewall/nat rules.
